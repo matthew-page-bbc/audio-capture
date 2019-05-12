@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/matthew-page-bbc/audio-capture/issues"
   },
-  "homepage": "https://github.com/matthew-page-bbc/audio-capture#readme"
+  "homepage": "https://github.com/matthew-page-bbc/audio-capture#readme",
+  "dependencies": {
+    "debug": "^4.1.1"
+  }
 }
