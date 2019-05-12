@@ -1,6 +1,6 @@
 {
   "name": "audio-capture",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Audio capture by wrapping ALSA arecord",
   "main": "index.js",
   "scripts": {
