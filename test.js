@@ -1,5 +1,10 @@
 'use strict';
-const AudioCapture = require('./index.js');
+const {AudioCapture, LevelMeter} = require('./index.js');
+
+var meter = new LevelMeter();
+meter.on('level', (data) => {
+    console.log(data);
+});
 
 var capture = new AudioCapture({
     device: "default:CARD=AudioPCI",
@@ -8,7 +13,12 @@ var capture = new AudioCapture({
 });
 
 capture.on('sample', (data) => {
-    console.log(data);
+    switch(data.channel)
+    {
+        case 0:
+            meter.addSample(data.value);
+            break;
+    }
 });
 
 capture.start();
