@@ -1,0 +1,24 @@
+{
+  "name": "audio-capture",
+  "version": "1.0.0",
+  "description": "Audio capture by wrapping ALSA arecord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthew-page-bbc/audio-capture.git"
+  },
+  "keywords": [
+    "audio",
+    "alsa",
+    "arecord"
+  ],
+  "author": "Matthew Page",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthew-page-bbc/audio-capture/issues"
+  },
+  "homepage": "https://github.com/matthew-page-bbc/audio-capture#readme"
+}
