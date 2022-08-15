@@ -2,8 +2,10 @@
 const {AudioCapture, LevelMeter} = require('./index.js');
 
 var meter = new LevelMeter({
+    windowSize: 4096,
     wordLength: 16
 });
+
 meter.on('level', (data) => {
     console.log(data);
 });
